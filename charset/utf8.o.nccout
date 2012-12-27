@@ -1,0 +1,158 @@
+
+D: read_utf8()
+s: charset_state.s0
+F: read_utf8/emit()
+S: charset_state.s0
+F: read_utf8/emit()
+F: read_utf8/emit()
+F: read_utf8/emit()
+F: read_utf8/emit()
+F: read_utf8/emit()
+F: read_utf8/emit()
+F: read_utf8/emit()
+F: read_utf8/emit()
+F: read_utf8/emit()
+
+D: write_utf8()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+F: write_utf8/emit()
+
+D: *charset_spec.read()
+F: read_utf8()
+
+D: *charset_spec.write()
+F: write_utf8()
+
+
+D: read_utf8/emit()
+F: *read_utf8()__farg3()
+
+D: read_utf8/emit()
+F: *read_utf8()__farg3()
+
+D: read_utf8/emit()
+F: *read_utf8()__farg3()
+
+D: read_utf8/emit()
+F: *read_utf8()__farg3()
+
+D: read_utf8/emit()
+F: *read_utf8()__farg3()
+
+D: read_utf8/emit()
+F: *read_utf8()__farg3()
+
+D: read_utf8/emit()
+F: *read_utf8()__farg3()
+
+D: read_utf8/emit()
+F: *read_utf8()__farg3()
+
+D: read_utf8/emit()
+F: *read_utf8()__farg3()
+
+D: read_utf8/emit()
+F: *read_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+D: write_utf8/emit()
+F: *write_utf8()__farg3()
+
+
+
+P: /home/david/src/putty-0.62/unix/../charset/utf8.c
+L: read_utf8() 19 180
+L: write_utf8() 189 230
+
+
+P: /home/david/src/putty-0.62/unix/../charset/charset.h
+Y: charset_state 73 75
+
+P: /home/david/src/putty-0.62/unix/../charset/internal.h
+Y: charset_spec 17 39
+#27 types
+#8 arglists
+#33 regions
+#2 function definitions

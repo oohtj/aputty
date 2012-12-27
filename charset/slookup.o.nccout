@@ -1,0 +1,18 @@
+
+D: charset_find_spec()
+g: cs_table[]
+g: cs_table
+s: charset_spec.charset
+
+
+
+P: /home/david/src/putty-0.62/unix/../charset/slookup.c
+L: charset_find_spec() 20 29
+
+
+P: /home/david/src/putty-0.62/unix/../charset/internal.h
+Y: charset_spec 17 39
+#28 types
+#8 arglists
+#6 regions
+#1 function definitions

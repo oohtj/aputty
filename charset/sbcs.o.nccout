@@ -1,0 +1,41 @@
+
+D: read_sbcs()
+s: charset_spec.data
+F: read_sbcs/emit()
+s: sbcs_data.sbcs2ucs[]
+s: sbcs_data.sbcs2ucs
+
+D: write_sbcs()
+s: charset_spec.data
+s: sbcs_data.nvalid
+s: sbcs_data.ucs2sbcs[]
+s: sbcs_data.ucs2sbcs
+s: sbcs_data.sbcs2ucs[]
+s: sbcs_data.sbcs2ucs
+F: write_sbcs/emit()
+F: write_sbcs/emit()
+
+
+D: read_sbcs/emit()
+F: *read_sbcs()__farg3()
+
+D: write_sbcs/emit()
+F: *write_sbcs()__farg3()
+
+D: write_sbcs/emit()
+F: *write_sbcs()__farg3()
+
+
+
+P: /home/david/src/putty-0.62/unix/../charset/sbcs.c
+L: read_sbcs() 15 24
+L: write_sbcs() 26 53
+
+
+P: /home/david/src/putty-0.62/unix/../charset/internal.h
+Y: charset_spec 17 39
+Y: sbcs_data 45 70
+#28 types
+#8 arglists
+#10 regions
+#2 function definitions

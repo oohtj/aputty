@@ -1,0 +1,42 @@
+
+D: charset_emit()
+s: charset_emit_param.errstr
+s: charset_emit_param.errlen
+s: charset_emit_param.outlen
+S: charset_emit_param.output
+S: charset_emit_param.outlen
+S: charset_emit_param.stopped
+
+D: charset_from_unicode()
+F: charset_find_spec()
+S: charset_emit_param.output
+S: charset_emit_param.outlen
+S: charset_emit_param.stopped
+S: charset_emit_param.errstr
+S: charset_emit_param.errlen
+S: charset_state.s0
+s: charset_emit_param.output
+s: charset_spec.write
+F: *charset_spec.write()
+g: charset_emit
+s: charset_emit_param.stopped
+
+
+
+P: /home/david/src/putty-0.62/unix/../charset/fromucs.c
+L: charset_emit() 16 41
+L: charset_from_unicode() 43 91
+
+
+P: /home/david/src/putty-0.62/unix/../charset/charset.h
+Y: charset_state 73 75
+
+P: /home/david/src/putty-0.62/unix/../charset/internal.h
+Y: charset_spec 17 39
+
+P: /home/david/src/putty-0.62/unix/../charset/fromucs.c
+Y: charset_emit_param 8 14
+#31 types
+#8 arglists
+#19 regions
+#2 function definitions

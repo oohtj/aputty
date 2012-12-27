@@ -1,0 +1,230 @@
+# Project: putty
+# Makefile created by Dev-C++ 4.9.9.1
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = putty_private.res
+OBJ  = ../../../be_all_s.o ../../../cmdline.o ../../../config.o ../../../cproxy.o ../../../dialog.o ../../../ldisc.o ../../../ldiscucs.o ../../../logging.o ../../../minibidi.o ../../../misc.o ../../../pgssapi.o ../../../pinger.o ../../../portfwd.o ../../../proxy.o ../../../raw.o ../../../rlogin.o ../../../sercfg.o ../../../settings.o ../../../ssh.o ../../../sshaes.o ../../../ssharcf.o ../../../sshblowf.o ../../../sshbn.o ../../../sshcrc.o ../../../sshcrcda.o ../../../sshdes.o ../../../sshdh.o ../../../sshdss.o ../../../sshgssc.o ../../../sshmd5.o ../../../sshpubk.o ../../../sshrand.o ../../../sshrsa.o ../../../sshsh256.o ../../../sshsh512.o ../../../sshsha.o ../../../sshzlib.o ../../../telnet.o ../../../terminal.o ../../../timing.o ../../../tree234.o ../../../version.o ../../../wcwidth.o ../../../wildcard.o ../../sizetip.o ../../wincfg.o ../../winctrls.o ../../windefs.o ../../windlg.o ../../window.o ../../wingss.o ../../winhandl.o ../../winhelp.o ../../winjump.o ../../winmisc.o ../../winnet.o ../../winnoise.o ../../winpgntc.o ../../winprint.o ../../winproxy.o ../../winser.o ../../winstore.o ../../wintime.o ../../winucs.o ../../winutils.o ../../winx11.o ../../../x11fwd.o $(RES)
+LINKOBJ  = ../../../be_all_s.o ../../../cmdline.o ../../../config.o ../../../cproxy.o ../../../dialog.o ../../../ldisc.o ../../../ldiscucs.o ../../../logging.o ../../../minibidi.o ../../../misc.o ../../../pgssapi.o ../../../pinger.o ../../../portfwd.o ../../../proxy.o ../../../raw.o ../../../rlogin.o ../../../sercfg.o ../../../settings.o ../../../ssh.o ../../../sshaes.o ../../../ssharcf.o ../../../sshblowf.o ../../../sshbn.o ../../../sshcrc.o ../../../sshcrcda.o ../../../sshdes.o ../../../sshdh.o ../../../sshdss.o ../../../sshgssc.o ../../../sshmd5.o ../../../sshpubk.o ../../../sshrand.o ../../../sshrsa.o ../../../sshsh256.o ../../../sshsh512.o ../../../sshsha.o ../../../sshzlib.o ../../../telnet.o ../../../terminal.o ../../../timing.o ../../../tree234.o ../../../version.o ../../../wcwidth.o ../../../wildcard.o ../../sizetip.o ../../wincfg.o ../../winctrls.o ../../windefs.o ../../windlg.o ../../window.o ../../wingss.o ../../winhandl.o ../../winhelp.o ../../winjump.o ../../winmisc.o ../../winnet.o ../../winnoise.o ../../winpgntc.o ../../winprint.o ../../winproxy.o ../../winser.o ../../winstore.o ../../wintime.o ../../winucs.o ../../winutils.o ../../winx11.o ../../../x11fwd.o $(RES)
+LIBS =  -L"C:/Program Files/Dev-Cpp/lib" -mwindows -ladvapi32 -lcomctl32 -lcomdlg32 -lgdi32 -limm32 -lshell32 -luser32 -lwinmm -lwinspool  
+INCS =  -I"C:/Program Files/Dev-Cpp/include"  -I"../../../."  -I"../../../charset"  -I"../../../windows"  -I"../../../unix"  -I"../../../macosx" 
+CXXINCS =  -I"C:/Program Files/Dev-Cpp/include/c++/3.3.1"  -I"C:/Program Files/Dev-Cpp/include/c++/3.3.1/mingw32"  -I"C:/Program Files/Dev-Cpp/include/c++/3.3.1/backward"  -I"C:/Program Files/Dev-Cpp/lib/gcc-lib/mingw32/3.3.1/include"  -I"C:/Program Files/Dev-Cpp/include"  -I"../../../."  -I"../../../charset"  -I"../../../windows"  -I"../../../unix"  -I"../../../macosx" 
+BIN  = putty.exe
+CXXFLAGS = $(CXXINCS) -W -D__GNUWIN32__ -DWIN32 -DNDEBUG -D_WINDOWS -DNO_MULTIMON -D_MBCS  
+CFLAGS = $(INCS) -W -D__GNUWIN32__ -DWIN32 -DNDEBUG -D_WINDOWS -DNO_MULTIMON -D_MBCS  
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before putty.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "putty.exe" $(LIBS)
+
+../../../be_all_s.o: ../../../be_all_s.c
+	$(CC) -c ../../../be_all_s.c -o ../../../be_all_s.o $(CFLAGS)
+
+../../../cmdline.o: ../../../cmdline.c
+	$(CC) -c ../../../cmdline.c -o ../../../cmdline.o $(CFLAGS)
+
+../../../config.o: ../../../config.c
+	$(CC) -c ../../../config.c -o ../../../config.o $(CFLAGS)
+
+../../../cproxy.o: ../../../cproxy.c
+	$(CC) -c ../../../cproxy.c -o ../../../cproxy.o $(CFLAGS)
+
+../../../dialog.o: ../../../dialog.c
+	$(CC) -c ../../../dialog.c -o ../../../dialog.o $(CFLAGS)
+
+../../../ldisc.o: ../../../ldisc.c
+	$(CC) -c ../../../ldisc.c -o ../../../ldisc.o $(CFLAGS)
+
+../../../ldiscucs.o: ../../../ldiscucs.c
+	$(CC) -c ../../../ldiscucs.c -o ../../../ldiscucs.o $(CFLAGS)
+
+../../../logging.o: ../../../logging.c
+	$(CC) -c ../../../logging.c -o ../../../logging.o $(CFLAGS)
+
+../../../minibidi.o: ../../../minibidi.c
+	$(CC) -c ../../../minibidi.c -o ../../../minibidi.o $(CFLAGS)
+
+../../../misc.o: ../../../misc.c
+	$(CC) -c ../../../misc.c -o ../../../misc.o $(CFLAGS)
+
+../../../pgssapi.o: ../../../pgssapi.c
+	$(CC) -c ../../../pgssapi.c -o ../../../pgssapi.o $(CFLAGS)
+
+../../../pinger.o: ../../../pinger.c
+	$(CC) -c ../../../pinger.c -o ../../../pinger.o $(CFLAGS)
+
+../../../portfwd.o: ../../../portfwd.c
+	$(CC) -c ../../../portfwd.c -o ../../../portfwd.o $(CFLAGS)
+
+../../../proxy.o: ../../../proxy.c
+	$(CC) -c ../../../proxy.c -o ../../../proxy.o $(CFLAGS)
+
+../../../raw.o: ../../../raw.c
+	$(CC) -c ../../../raw.c -o ../../../raw.o $(CFLAGS)
+
+../../../rlogin.o: ../../../rlogin.c
+	$(CC) -c ../../../rlogin.c -o ../../../rlogin.o $(CFLAGS)
+
+../../../sercfg.o: ../../../sercfg.c
+	$(CC) -c ../../../sercfg.c -o ../../../sercfg.o $(CFLAGS)
+
+../../../settings.o: ../../../settings.c
+	$(CC) -c ../../../settings.c -o ../../../settings.o $(CFLAGS)
+
+../../../ssh.o: ../../../ssh.c
+	$(CC) -c ../../../ssh.c -o ../../../ssh.o $(CFLAGS)
+
+../../../sshaes.o: ../../../sshaes.c
+	$(CC) -c ../../../sshaes.c -o ../../../sshaes.o $(CFLAGS)
+
+../../../ssharcf.o: ../../../ssharcf.c
+	$(CC) -c ../../../ssharcf.c -o ../../../ssharcf.o $(CFLAGS)
+
+../../../sshblowf.o: ../../../sshblowf.c
+	$(CC) -c ../../../sshblowf.c -o ../../../sshblowf.o $(CFLAGS)
+
+../../../sshbn.o: ../../../sshbn.c
+	$(CC) -c ../../../sshbn.c -o ../../../sshbn.o $(CFLAGS)
+
+../../../sshcrc.o: ../../../sshcrc.c
+	$(CC) -c ../../../sshcrc.c -o ../../../sshcrc.o $(CFLAGS)
+
+../../../sshcrcda.o: ../../../sshcrcda.c
+	$(CC) -c ../../../sshcrcda.c -o ../../../sshcrcda.o $(CFLAGS)
+
+../../../sshdes.o: ../../../sshdes.c
+	$(CC) -c ../../../sshdes.c -o ../../../sshdes.o $(CFLAGS)
+
+../../../sshdh.o: ../../../sshdh.c
+	$(CC) -c ../../../sshdh.c -o ../../../sshdh.o $(CFLAGS)
+
+../../../sshdss.o: ../../../sshdss.c
+	$(CC) -c ../../../sshdss.c -o ../../../sshdss.o $(CFLAGS)
+
+../../../sshgssc.o: ../../../sshgssc.c
+	$(CC) -c ../../../sshgssc.c -o ../../../sshgssc.o $(CFLAGS)
+
+../../../sshmd5.o: ../../../sshmd5.c
+	$(CC) -c ../../../sshmd5.c -o ../../../sshmd5.o $(CFLAGS)
+
+../../../sshpubk.o: ../../../sshpubk.c
+	$(CC) -c ../../../sshpubk.c -o ../../../sshpubk.o $(CFLAGS)
+
+../../../sshrand.o: ../../../sshrand.c
+	$(CC) -c ../../../sshrand.c -o ../../../sshrand.o $(CFLAGS)
+
+../../../sshrsa.o: ../../../sshrsa.c
+	$(CC) -c ../../../sshrsa.c -o ../../../sshrsa.o $(CFLAGS)
+
+../../../sshsh256.o: ../../../sshsh256.c
+	$(CC) -c ../../../sshsh256.c -o ../../../sshsh256.o $(CFLAGS)
+
+../../../sshsh512.o: ../../../sshsh512.c
+	$(CC) -c ../../../sshsh512.c -o ../../../sshsh512.o $(CFLAGS)
+
+../../../sshsha.o: ../../../sshsha.c
+	$(CC) -c ../../../sshsha.c -o ../../../sshsha.o $(CFLAGS)
+
+../../../sshzlib.o: ../../../sshzlib.c
+	$(CC) -c ../../../sshzlib.c -o ../../../sshzlib.o $(CFLAGS)
+
+../../../telnet.o: ../../../telnet.c
+	$(CC) -c ../../../telnet.c -o ../../../telnet.o $(CFLAGS)
+
+../../../terminal.o: ../../../terminal.c
+	$(CC) -c ../../../terminal.c -o ../../../terminal.o $(CFLAGS)
+
+../../../timing.o: ../../../timing.c
+	$(CC) -c ../../../timing.c -o ../../../timing.o $(CFLAGS)
+
+../../../tree234.o: ../../../tree234.c
+	$(CC) -c ../../../tree234.c -o ../../../tree234.o $(CFLAGS)
+
+../../../version.o: ../../../version.c
+	$(CC) -c ../../../version.c -o ../../../version.o $(CFLAGS)
+
+../../../wcwidth.o: ../../../wcwidth.c
+	$(CC) -c ../../../wcwidth.c -o ../../../wcwidth.o $(CFLAGS)
+
+../../../wildcard.o: ../../../wildcard.c
+	$(CC) -c ../../../wildcard.c -o ../../../wildcard.o $(CFLAGS)
+
+../../sizetip.o: ../../sizetip.c
+	$(CC) -c ../../sizetip.c -o ../../sizetip.o $(CFLAGS)
+
+../../wincfg.o: ../../wincfg.c
+	$(CC) -c ../../wincfg.c -o ../../wincfg.o $(CFLAGS)
+
+../../winctrls.o: ../../winctrls.c
+	$(CC) -c ../../winctrls.c -o ../../winctrls.o $(CFLAGS)
+
+../../windefs.o: ../../windefs.c
+	$(CC) -c ../../windefs.c -o ../../windefs.o $(CFLAGS)
+
+../../windlg.o: ../../windlg.c
+	$(CC) -c ../../windlg.c -o ../../windlg.o $(CFLAGS)
+
+../../window.o: ../../window.c
+	$(CC) -c ../../window.c -o ../../window.o $(CFLAGS)
+
+../../wingss.o: ../../wingss.c
+	$(CC) -c ../../wingss.c -o ../../wingss.o $(CFLAGS)
+
+../../winhandl.o: ../../winhandl.c
+	$(CC) -c ../../winhandl.c -o ../../winhandl.o $(CFLAGS)
+
+../../winhelp.o: ../../winhelp.c
+	$(CC) -c ../../winhelp.c -o ../../winhelp.o $(CFLAGS)
+
+../../winjump.o: ../../winjump.c
+	$(CC) -c ../../winjump.c -o ../../winjump.o $(CFLAGS)
+
+../../winmisc.o: ../../winmisc.c
+	$(CC) -c ../../winmisc.c -o ../../winmisc.o $(CFLAGS)
+
+../../winnet.o: ../../winnet.c
+	$(CC) -c ../../winnet.c -o ../../winnet.o $(CFLAGS)
+
+../../winnoise.o: ../../winnoise.c
+	$(CC) -c ../../winnoise.c -o ../../winnoise.o $(CFLAGS)
+
+../../winpgntc.o: ../../winpgntc.c
+	$(CC) -c ../../winpgntc.c -o ../../winpgntc.o $(CFLAGS)
+
+../../winprint.o: ../../winprint.c
+	$(CC) -c ../../winprint.c -o ../../winprint.o $(CFLAGS)
+
+../../winproxy.o: ../../winproxy.c
+	$(CC) -c ../../winproxy.c -o ../../winproxy.o $(CFLAGS)
+
+../../winser.o: ../../winser.c
+	$(CC) -c ../../winser.c -o ../../winser.o $(CFLAGS)
+
+../../winstore.o: ../../winstore.c
+	$(CC) -c ../../winstore.c -o ../../winstore.o $(CFLAGS)
+
+../../wintime.o: ../../wintime.c
+	$(CC) -c ../../wintime.c -o ../../wintime.o $(CFLAGS)
+
+../../winucs.o: ../../winucs.c
+	$(CC) -c ../../winucs.c -o ../../winucs.o $(CFLAGS)
+
+../../winutils.o: ../../winutils.c
+	$(CC) -c ../../winutils.c -o ../../winutils.o $(CFLAGS)
+
+../../winx11.o: ../../winx11.c
+	$(CC) -c ../../winx11.c -o ../../winx11.o $(CFLAGS)
+
+../../../x11fwd.o: ../../../x11fwd.c
+	$(CC) -c ../../../x11fwd.c -o ../../../x11fwd.o $(CFLAGS)
+
+putty_private.res: putty_private.rc ../../putty.rc putty_private.rc 
+	$(WINDRES) -i putty_private.rc --input-format=rc -o putty_private.res -O coff  --include-dir ../../../WINDOWS

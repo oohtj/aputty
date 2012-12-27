@@ -1,0 +1,38 @@
+
+D: tolower()
+F: __ctype_tolower_loc()
+
+D: toupper()
+F: __ctype_toupper_loc()
+
+D: charset_to_mimeenc()
+g: mimeencs[]
+g: mimeencs
+s: mimeencs.charset
+s: mimeencs.name
+
+D: charset_from_mimeenc()
+g: mimeencs[]
+g: mimeencs
+s: mimeencs.name
+F: __ctype_tolower_loc()
+F: tolower()
+s: mimeencs.charset
+
+
+
+P: /usr/include/ctype.h
+L: tolower() 216 220
+L: toupper() 222 226
+
+P: /home/david/src/putty-0.62/unix/../charset/mimeenc.c
+L: charset_to_mimeenc() 185 194
+L: charset_from_mimeenc() 196 214
+
+
+P: /home/david/src/putty-0.62/unix/../charset/mimeenc.c
+Y: mimeencs 11 14
+#44 types
+#10 arglists
+#24 regions
+#4 function definitions

@@ -1,0 +1,38 @@
+
+D: tolower()
+F: __ctype_tolower_loc()
+
+D: toupper()
+F: __ctype_toupper_loc()
+
+D: charset_to_xenc()
+g: xencs[]
+g: xencs
+s: xencs.charset
+s: xencs.name
+
+D: charset_from_xenc()
+g: xencs[]
+g: xencs
+s: xencs.name
+F: __ctype_tolower_loc()
+F: tolower()
+s: xencs.charset
+
+
+
+P: /usr/include/ctype.h
+L: tolower() 216 220
+L: toupper() 222 226
+
+P: /home/david/src/putty-0.62/unix/../charset/xenc.c
+L: charset_to_xenc() 64 73
+L: charset_from_xenc() 75 93
+
+
+P: /home/david/src/putty-0.62/unix/../charset/xenc.c
+Y: xencs 11 14
+#44 types
+#10 arglists
+#24 regions
+#4 function definitions

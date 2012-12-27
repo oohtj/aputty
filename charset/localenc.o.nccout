@@ -1,0 +1,47 @@
+
+D: tolower()
+F: __ctype_tolower_loc()
+
+D: toupper()
+F: __ctype_toupper_loc()
+
+D: charset_to_localenc()
+g: localencs[]
+g: localencs
+s: localencs.charset
+s: localencs.name
+
+D: charset_from_localenc()
+F: charset_from_mimeenc()
+F: charset_from_xenc()
+g: localencs[]
+g: localencs
+s: localencs.name
+F: __ctype_tolower_loc()
+F: tolower()
+s: localencs.charset
+
+D: charset_localenc_nth()
+g: localencs[]
+g: localencs
+s: localencs.return_in_enum
+s: localencs.charset
+
+
+
+P: /usr/include/ctype.h
+L: tolower() 216 220
+L: toupper() 222 226
+
+P: /home/david/src/putty-0.62/unix/../charset/localenc.c
+L: charset_to_localenc() 80 89
+L: charset_from_localenc() 91 114
+L: charset_localenc_nth() 116 125
+
+
+P: /home/david/src/putty-0.62/unix/../charset/localenc.c
+Y: localencs 18 22
+#44 types
+#10 arglists
+#26 regions
+#5 function definitions

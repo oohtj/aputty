@@ -1,0 +1,17 @@
+
+D: *charset_spec.read()
+F: read_sbcs()
+
+D: *charset_spec.write()
+F: write_sbcs()
+
+
+
+
+P: /home/david/src/putty-0.62/unix/../charset/internal.h
+Y: charset_spec 17 39
+Y: sbcs_data 45 70
+#28 types
+#8 arglists
+#4 regions
+#0 function definitions

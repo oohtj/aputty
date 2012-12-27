@@ -1,0 +1,118 @@
+
+D: __strcspn_c1()
+
+D: __strcspn_c2()
+
+D: __strcspn_c3()
+
+D: __strspn_c1()
+
+D: __strspn_c2()
+
+D: __strspn_c3()
+
+D: __strpbrk_c2()
+
+D: __strpbrk_c3()
+
+D: __strtok_r_1c()
+
+D: __strsep_1c()
+F: __rawmemchr()
+F: __builtin_strchr()
+
+D: __strsep_2c()
+
+D: __strsep_3c()
+
+D: memcpy()
+F: __builtin___memcpy_chk()
+F: __builtin_object_size()
+
+D: memmove()
+F: __builtin___memmove_chk()
+F: __builtin_object_size()
+
+D: memset()
+F: __warn_memset_zero_len()
+F: __builtin___memset_chk()
+F: __builtin_object_size()
+
+D: bcopy()
+F: __builtin___memmove_chk()
+F: __builtin_object_size()
+
+D: bzero()
+F: __builtin___memset_chk()
+F: __builtin_object_size()
+
+D: strcpy()
+F: __builtin___strcpy_chk()
+F: __builtin_object_size()
+
+D: strncpy()
+F: __builtin___strncpy_chk()
+F: __builtin_object_size()
+
+D: stpncpy()
+F: __builtin_object_size()
+F: __stpncpy_chk()
+F: __stpncpy_alias()
+
+D: strcat()
+F: __builtin___strcat_chk()
+F: __builtin_object_size()
+
+D: strncat()
+F: __builtin___strncat_chk()
+F: __builtin_object_size()
+
+D: charset_from_macenc()
+g: macencs[]
+g: macencs
+s: macencs.fontname
+F: __builtin_strlen()
+F: __builtin_strcmp()
+s: macencs.script
+s: macencs.region
+s: macencs.sysvermin
+s: macencs.charset
+
+
+
+P: /usr/include/i386-linux-gnu/bits/string2.h
+L: __strcspn_c1() 970 977
+L: __strcspn_c2() 981 989
+L: __strcspn_c3() 993 1002
+L: __strspn_c1() 1046 1054
+L: __strspn_c2() 1058 1066
+L: __strspn_c3() 1070 1079
+L: __strpbrk_c2() 1123 1130
+L: __strpbrk_c3() 1134 1143
+L: __strtok_r_1c() 1173 1194
+L: __strsep_1c() 1223 1230
+L: __strsep_2c() 1233 1257
+L: __strsep_3c() 1261 1285
+
+P: /usr/include/i386-linux-gnu/bits/string3.h
+L: memcpy() 48 53
+L: memmove() 55 59
+L: memset() 76 86
+L: bcopy() 89 93
+L: bzero() 95 99
+L: strcpy() 102 106
+L: strncpy() 117 122
+L: stpncpy() 131 138
+L: strcat() 141 145
+L: strncat() 148 153
+
+P: /home/david/src/putty-0.62/unix/../charset/macenc.c
+L: charset_from_macenc() 155 169
+
+
+P: /home/david/src/putty-0.62/unix/../charset/macenc.c
+Y: macencs 76 82
+#80 types
+#33 arglists
+#72 regions
+#23 function definitions
